@@ -24,6 +24,7 @@ class DiscountService {
       ...(query
         ? { discount_code: { contains: query, mode: 'insensitive' } }
         : {}),
+      store_id: req.query.storeId as string,
     };
 
     if (!req.query.storeId) {

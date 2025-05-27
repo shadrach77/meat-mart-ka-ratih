@@ -65,7 +65,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             errorMessage = error.message;
           }
 
-          throw new Error(errorMessage);
+          //to fix login error that occurs sometimes
+          // throw new Error(errorMessage);
+          return null;
         }
       },
     }),
