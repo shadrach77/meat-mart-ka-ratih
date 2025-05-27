@@ -47,7 +47,7 @@ export default class App {
     this.app.use(
       cors({
         origin: [
-          'https://meat-mart-ka-ratih-le52k4dmd-shadrachs-projects-a1a00fb0.vercel.app/',
+          'https://meat-mart-ka-ratih-web.vercel.app/',
           'http://localhost:3000',
           'https://accounts.google.com',
           'http://localhost:3000/api/auth/callback/google',
