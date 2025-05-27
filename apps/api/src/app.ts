@@ -91,7 +91,7 @@ export default class App {
   }
 
   private routes(): void {
-    // this.app.options('*', cors());
+    this.app.options('*', cors());
     this.app.use('/api/auth', authRouter.getRouter());
     this.app.use('/api/addresses', addressRouter.getRouter());
     this.app.use('/api/admin', adminRouter.getRouter());
