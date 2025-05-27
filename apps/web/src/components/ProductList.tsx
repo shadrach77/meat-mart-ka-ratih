@@ -140,7 +140,7 @@ export const ProductList = () => {
       <div className="py-4">
         <h3 className="text-xl md:text-3xl font-bold ">Promo Menarik</h3>
 
-        {promoProductData.length !== 0 ? (
+        {!!promoProductData.length ? (
           <div className="m-auto my-5  grid grid-cols-2 text-xs md:text-sm md:grid-cols-3  lg:grid-cols-5 gap-4 md:ml-10 lg:ml-0">
             {isPromoLoading ? (
               <CardSkeletonList />
