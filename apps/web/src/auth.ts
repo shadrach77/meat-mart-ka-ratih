@@ -66,9 +66,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           }
 
           //to fix login error that occurs sometimes
-          // throw new Error(errorMessage);
-          console.error('Login failed:', error);
-          return null;
+          throw new Error(errorMessage);
+          // console.error('Login failed:', error);
+          // return null;
         }
       },
     }),
